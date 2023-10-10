@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuggles&family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap');
+
+*{
+    font-family: "roboto", sans-serif;
+}
+
+.navbar{
+    background-color: #FFCDD2;
+    height: 120px;
+    box-shadow: 0px 0.3px 2.5px 0px rgba(0,0,0,0.75);
+}
+
+.navbar-nav{
+    margin-left: 10%;
+}
+
+.logo{
+    margin-left: 20%;
+}
+
+.nav-item{
+    color: black;
+    padding: 40px 0;
+    transition: 0.2s ease-in ;
+    font-weight: 600;
+}
+
+.nav-item:hover{
+    background-color: #E5B8BD;
+    transition: 0.2s ease-out;
+}
+
+/* Breadcrumb */
+
+.breadcrumb-item+.breadcrumb-item::before {
+    color: white;
+    font-weight: 700;
+}
+.breadcrumb{
+    font-size: 18px;
+    background-color: #F44336;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumb a.first{
+    margin-left: 150px;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.breadcrumb a{
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+/* Menu lateral */
+
+.menu ul{
+    border: 1px solid rgb(202, 200, 200);
+    margin-top: 50px;
+}
+
+.nav2{
+    font-size: 15px;
+    padding: 12px;
+    list-style-type: none;
+    color: red;
+    font-weight: 300;   
+}
+
+
+/* Noticias(card) */
+
+.card{
+    margin-top: 50px;
+    box-shadow: 0px 0.3px 2.5px 0px rgba(0,0,0,0.75);
+}
+.card-img-top{
+    width: 94%;
+    margin: 3%;
+}
+
+.card h4{
+    font-weight: bolder;
+    color: red;
+    margin-left: 1%;
+}
+
+.card p{
+    margin: 1%;
+}
+
+.card-body a{
+    text-decoration: none;
+    color: white;
+    background: red;
+    padding: 10px;
+    margin: 1%;
+}
+
+
+
+
+
+/* FOOTER */
+
+
+footer{
+    margin-top: 100px;
+    width: 100vw;
+    display: flex;
+    height: 200px;
+    background-color:#E53935;
+    justify-content: center;
+    color: white;
+    padding-top: 20px;
+}
+
+footer .container{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+footer .container div{
+    text-align: center;
+}
+
+footer .container div li{
+    text-decoration: none;
+    list-style: none;
+}
+
+footer .container a{
+    text-decoration: none;
+    color: white
+}
+
+.footer-copyright{
+    background-color:#D73935;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+

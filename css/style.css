@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuggles&family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap');
+
+*{
+    font-family: "roboto", sans-serif;
+}
+
+.navbar{
+    background-color: #FFCDD2;
+    height: 120px;
+    box-shadow: 0px 0.3px 2.5px 0px rgba(0,0,0,0.75);
+}
+
+.navbar-nav{
+    margin-left: 10%;
+}
+
+.logo{
+    margin-left: 20%;
+}
+
+.nav-item{
+    color: black;
+    padding: 40px 0;
+    transition: 0.2s ease-in ;
+    font-weight: 600;
+}
+
+.nav-item:hover{
+    background-color: #E5B8BD;
+    transition: 0.2s ease-out;
+}
+
+
+/* Cadastros */
+
+
+.line1 {
+    margin-top: 70px;
+    height: 200px;
+    box-shadow: 0px 0.3px 2.5px 0px rgba(0,0,0,0.75);
+}
+
+.line1 a.vagas{
+    text-decoration: none;
+    color:white;
+    padding: 49px;
+}
+
+.line2c1 {
+    height: 40px;
+}
+
+.line2c1 a, .line2c2 a, .line2c3 a{
+    text-decoration: none;
+    color:white;
+    padding: 7px;
+}
+
+.col2{
+    background:#E65100;
+}
+
+.line2c2 {
+    height: 40px;
+    background:#E65100;
+}
+
+.col3 {
+    background: #004D40;
+}
+
+.line2c3{
+    height: 40px;
+    background: #004D40;
+}
+
+
+/* CARDS */
+
+.card{
+    width: 16.3rem;
+    
+}
+
+.eventos{
+    background: #E91E63;
+}
+
+h6{
+    margin-top: 50px;
+    height: 35px;
+    color: white;
+    display: flex;
+    align-items: center;
+    width: max-content;
+    padding: 0 10px;
+}
+
+.card-text{
+    height: 100px;
+}
+
+.card-body a{
+    text-decoration: none;
+    color: black;
+    padding: 16px 100px 18px 95px;
+}
+
+
+/* FOOTER */
+
+
+footer{
+    margin-top: 100px;
+    width: 100vw;
+    display: flex;
+    height: 200px;
+    background-color:#E53935;
+    justify-content: center;
+    color: white;
+    padding-top: 20px;
+}
+
+footer .container{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+footer .container div{
+    text-align: center;
+}
+
+footer .container div li{
+    text-decoration: none;
+    list-style: none;
+}
+
+footer .container a{
+    text-decoration: none;
+    color: white
+}
+
+.footer-copyright{
+    background-color:#D73935;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+

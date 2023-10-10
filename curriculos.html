@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/curriculos.css">
+
+    <title>Variedades | BNU online</title>
+</head>
+
+
+<body>
+
+    <!----------------------------NAV--------------------------------->
+
+    <nav class="navbar navbar-expand-lg">
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <img class="logo" src="https://www.bnuonline.com.br/img/logo.png" width="250px">
+
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="nav">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">HOME</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="">EMPREGOS</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="curriculos.html">CURRÍCULOS</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">CLASSIFICADOS</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link " href="blog.html">BLOG</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+
+    <nav style="--bs-breadcrumb-divider: '>';" class="bread">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item "><a href="index.html" class="first">Início</a></li>
+            <li class="breadcrumb-item "><a href="index.html">Currículos</a></li>
+        </ol>
+    </nav>
+
+
+    <!-- Curriculo -->
+
+
+    <h1>Cadastrar um currículo</h1>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-4 dados">
+                <form action="#" method="POST">
+                    <fieldset>
+                        <legend>Dados Pessoais</legend>
+
+                        <input type="text" name="nome" id="nome" placeholder="Nome Completo" class="mt-1">
+                        <input type="text" name="cpf" id="cpf" placeholder="CPF" class="mt-2">
+                        <input type="text" name="nacionalidade" id="nacionalidade" placeholder="Nacionalidade"
+                            class="mt-2">
+
+                        <label for="nascimento" class="mt-2">Data de nascimento:</label><br>
+                        <input type="date" name="nascimento" id="nascimento" class="mt-1"><br>
+
+                        <label for="sexo" class="mt-2">Sexo:</label><br>
+                        <select name="sexo" id="sexo" required class="mt-1">
+                            <option value="">Selecione seu gênero</option>
+                            <option value="M">Masculino</option>
+                            <option value="F">Feminino</option>
+                        </select>
+                    </fieldset>
+            </div>
+
+
+            <div class="col-sm-12 col-md-4 dados">
+
+                <form action="#" method="POST">
+                    <fieldset>
+                        <legend>Endereço</legend>
+                        <input type="text" name="pais" id="pais" placeholder="Pais">
+                        <input type="text" name="estado" id="estado" placeholder="Estado" class="mt-2">
+                        <input type="text" name="cidade" id="cidade" placeholder="Cidade" class="mt-2">
+                        <input type="text" name="bairro" id="bairro" placeholder="Bairro" class="mt-2">
+                        <input type="text" name="rua" id="rua" placeholder="Rua" class="mt-2">
+                        <input type="number" name="numero" id="numero" placeholder="Número" class="mt-2">
+                    </fieldset>
+                </form>
+            </div>
+
+            <div class="col-sm-12 col-md-4 dados">
+                <form action="#" method="POST">
+                    <fieldset>
+                        <legend>Contato</legend>
+                        <input type="tel" name="telefone" id="telefone" placeholder="Telefone" class="mt-2">
+                        <input type="email" name="email" id="email" placeholder="E-mail" class="mt-2">
+                        <input type="text" name="linkedin" id="linkedin" placeholder="Linked in" class="mt-2">
+                        <input type="text" name="outros" id="outros" placeholder="Outros" class="mt-2">
+                    </fieldset>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-sm-12 col-md-4 dados">
+                <form action="#" method="POST">
+                    <fieldset>
+                        <legend>Formação acadêmica</legend>
+
+                        <input type="checkbox" name="formaçao[]" id="fundamental" value="fundamental">
+                        <label for="fundamental">Ensino fundamental</label><br>
+                        <input type="text" name="fundamental" id="fundamental" placeholder="Escola" class="mb-2">
+                        <br>
+                        <input type="checkbox" name="formaçao[]" id="medio" value="medio">
+                        <label for="medio">Ensino médio</label><br>
+                        <input type="text" name="medio" id="medio" placeholder="Escola" class="mb-2">
+                        <br>
+                        <input type="checkbox" name="formaçao[]" id="superior" value="superior">
+                        <label for="superior">Ensino Superior</label><br>
+                        <input type="text" name="superior" id="superior" placeholder="Instituição" class="mb-2">
+                        <br>
+                        <input type="checkbox" name="formaçao[]" id="pos" value="pos">
+                        <label for="pos">Pós Graduação</label><br>
+                        <input type="text" name="pos" id="pos" placeholder="Instituição" class="mb-2">
+                        <br>
+                        <input type="checkbox" name="formaçao[]" id="mestrado" value="mestrado">
+                        <label for="mestrado">Mestrado</label><br>
+                        <input type="text" name="mestrado" id="mestrado" placeholder="Instituição" class="mb-2">
+                        <br>
+                        <input type="checkbox" name="formaçao[]" id="doutorado" value="doutorado">
+                        <label for="doutorado">Doutorado</label><br>
+                        <input type="text" name="doutorado" id="doutorado" placeholder="Instituição" class="mb-2">
+                    </fieldset>
+                    <hr>
+                    <fieldset>
+                        <legend>Outros cursos</legend><br>
+                        <label for="mestrado">Curso</label><br>
+                        <input type="text" name="curso" id="curso" placeholder="Curso" class="mt-2" ><br>
+                        <input type="text" name="inst" id="inst" placeholder="Instituição" class="mt-2" ><br>
+                    </fieldset>
+                </form>
+            </div>
+
+            <div class="col-sm-12 col-md-7 text">
+                <form action="#" method="POST">
+                    <fieldset>
+                        <legend>Objetivo</legend>
+                        <label for="objetivos">Quais seus objetivos?</label>
+                        <br>
+                        <textarea name="objetivos" id="objetivos" cols="70" rows="20" placeholder="Meu objetivo é..."></textarea>
+                    </fieldset>
+                </form>
+            </div>     
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-sm-12 col-md-3 dados">
+                <form action="#" method="POST">
+                    <fieldset>
+                        <legend>Experiências profissionais</legend>
+                        <label for="empresa1">Empresa 1</label> <br>
+                        <input type="text" name="empresa" id="empresa" placeholder="Empresa" class="mt-2"><br>
+                        <input type="text" name="cargo" id="cargo" placeholder="Cargo" class="mt-2" ><br>
+                        <label for="admissao" class="mt-2" >Início: </label> <br>
+                        <input type="date"><br>
+                        <label for="demissao" class="mt-2" >Fim: </label> <br>
+                        <input type="date"><br>
+                        <label for="funcoes" class="mt-2" >Funções</label><br>
+                        <textarea name="funcoes" id="funcoes" cols="30" rows="10"
+                            placeholder="Minha função na empresa abrangia..."></textarea>
+                </form>
+            </div>
+
+            <div class="col-sm-12 col-md-3 dados">
+                <form action="#" method="POST">
+                    <fieldset>
+                        <legend>Experiências profissionais</legend>
+                        <label for="empresa2">Empresa 2</label> <br>
+                        <input type="text" name="empresa" id="empresa" placeholder="Empresa" class="mt-2"><br>
+                        <input type="text" name="cargo" id="cargo" placeholder="Cargo" class="mt-2" ><br>
+                        <label for="admissao" class="mt-2" >Início: </label> <br>
+                        <input type="date"><br>
+                        <label for="demissao" class="mt-2" >Fim: </label> <br>
+                        <input type="date"><br>
+                        <label for="funcoes" class="mt-2" >Funções</label><br>
+                        <textarea name="funcoes" id="funcoes" cols="30" rows="10"
+                            placeholder="Minha função na empresa abrangia..."></textarea>
+                </form>
+            </div>
+
+            <div class="col-sm-12 col-md-3 dados">
+                <form action="#" method="POST">
+                    <fieldset>
+                        <legend>Experiências profissionais</legend>
+                        <label for="empresa3">Empresa 3</label> <br>
+                        <input type="text" name="empresa" id="empresa" placeholder="Empresa" class="mt-2"><br>
+                        <input type="text" name="cargo" id="cargo" placeholder="Cargo" class="mt-2" ><br>
+                        <label for="admissao" class="mt-2" >Início: </label> <br>
+                        <input type="date"><br>
+                        <label for="demissao" class="mt-2" >Fim: </label> <br>
+                        <input type="date"><br>
+                        <label for="funcoes" class="mt-2" >Funções</label><br>
+                        <textarea name="funcoes" id="funcoes" cols="30" rows="10"
+                            placeholder="Minha função na empresa abrangia..."></textarea>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <button type="submit" class="mt-5" >Cadastrar</button>
+
+
+
+
+
+    <!-- FOOTER -->
+
+    <footer>
+        <div class="container ">
+
+            <div class="item">
+                <h3>Blumenau Online</h3>
+                <p>Portal de oportunidades</p>
+            </div>
+
+            <div class="item">
+                <h3>Anuncie Aqui</h3>
+                <a href="mailto:victor.feller@outlook.com">victor.feller@outlook.com</a>
+            </div>
+
+            <div class="item">
+                <h3>Veja Também</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Empregos</a></li>
+                    <li><a href="curriculos.html">Currículos</a></li>
+                    <li><a href="#">Classificados</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+    </footer>
+
+    <div class="footer-copyright">
+        <p>© 2023 Blumenau Online | Todos os direitos reservados.</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
